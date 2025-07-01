@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Upscaler - Enhance Your Videos",
-  description: "High-quality video upscaling with AI technology",
+  title: "shadcn/ui Starter",
+  description: "A modern Next.js starter template with shadcn/ui, Tailwind CSS, and TypeScript",
+  keywords: ["nextjs", "shadcn", "tailwindcss", "typescript", "starter", "template"],
 };
 
 export default function RootLayout({
@@ -31,11 +32,7 @@ export default function RootLayout({
           'antialiased bg-background text-foreground min-h-screen'
         )}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="backdrop-blur-sm bg-card/30 border border-border/40 rounded-xl shadow-lg overflow-hidden">
-            {children}
-          </div>
-        </div>
+        {children}
       </body>
     </html>
   );
